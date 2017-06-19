@@ -3,6 +3,7 @@ Only API app
 
 User
 Создание: post /api/users , {name: "test"}
+</br>
 Обновление: put /api/users , {name: "test"}
 Все users: get /api/users
 Сессии пользователя: get /api/users/#{ID}/sessions
