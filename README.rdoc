@@ -2,12 +2,12 @@
 Only API app
 
 User
-Создание: post /api/users , {name: "test"}
-</br>
-Обновление: put /api/users , {name: "test"}
-Все users: get /api/users
-Сессии пользователя: get /api/users/#{ID}/sessions
+* Создание: post /api/users , {name: "test"}
 
-Session
-Создание: post /api/sessions , {time: "1 year 5 months 12 days 1 hour 27 minutes 34 seconds"}
-Обновление: put /api/sessions , {time: "1 year 5 months 12 days 1 hour 27 minutes 34 seconds"}
+* Обновление: put /api/users , {name: "test"}
+* Все users: get /api/users
+* Сессии пользователя: get /api/users/#{ID}/sessions
+
+* Session
+* Создание: post /api/sessions , {time: "1 year 5 months 12 days 1 hour 27 minutes 34 seconds"}
+* Обновление: put /api/sessions , {time: "1 year 5 months 12 days 1 hour 27 minutes 34 seconds"}
