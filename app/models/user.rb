@@ -4,6 +4,6 @@ class User < ActiveRecord::Base
   validates :name, presence: true
 
   def transfer_to_json
-    as_json(except: [:updated_at, :created_at])
+    as_json(except: [:updated_at, :created_at]).merge(sum_sessions: sessions.sum(:second))
   end
 end
