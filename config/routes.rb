@@ -3,6 +3,12 @@ Rails.application.routes.draw do
     resources :users do
       member do
         get :sessions
+        post :amocrm
+        get :amocrm
+      end
+      collection do
+        post :amocrm
+        get :amocrm
       end
     end
 
