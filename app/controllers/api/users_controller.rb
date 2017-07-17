@@ -27,14 +27,14 @@ module Api
 
     def amocrm
       amo = Amocrm.new
-      email = "parfenov407@gmail.com"
+      email = params[:email]
       contact = amo.contact_find_by_email(email)
       param_contact = {  
-        name: "Максим Первушин", 
+        name: params[:fname], 
         custom_fields: [
           { 
             id: 241509, #phone
-            values: [ {value: "+7 922 227 78 65", enum:  "HOME"} ]
+            values: [ {value: params[:phone], enum:  "HOME"} ]
           },{
             id: 241511, #email
             values: [ {value: email, enum:  "WORK"}]
@@ -48,10 +48,10 @@ module Api
         custom_fields: [
           {
             id: 241549,  # OFERTA
-            values:[ {value: "Согласен на обработку персональных данных" } ]
+            values:[ {value: params[:oferta] } ]
           },{
             id: 241569, # LEADS 
-            values: [ { value: "Название LEADS" }]
+            values: [ { value: params[:lead] }]
           },{
             id: 241595,  # UTM_SOURCE
             values: [ { value: "vk" } ]
@@ -74,7 +74,7 @@ module Api
         element_id: lead_id,
         element_type: 2,
         task_type: 1,
-        text: 'связаться с клиентом',
+        text: 'Связаться с клиентом',
         complete_till: Time.now.end_of_day.to_i,
 
       }
