@@ -44,7 +44,7 @@ module Api
 
       contact_id = contact.present? ? contact["id"] : amo.contact_create(param_contact)["add"].first["id"]
       param_lead = {  
-        name: "Сделка с клиентом #{Time.now.to_i}", 
+        name: params[:lead], 
         custom_fields: [
           {
             id: 241549,  # OFERTA
