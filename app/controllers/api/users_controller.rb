@@ -75,7 +75,7 @@ module Api
         element_type: 2,
         task_type: 1,
         text: 'Связаться с клиентом',
-        complete_till: Time.now.end_of_day.to_i,
+        complete_till: (Time.now.end_of_day - 5.hour).to_i,
 
       }
       amo.task_create(param_task)
