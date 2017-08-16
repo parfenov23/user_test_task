@@ -1,0 +1,82 @@
+#rec29124078{
+  background-color: #e0e0e0;
+}
+.t351__imgwrapper, .t351__imgmiddle .t351__sizer{
+  min-height: 168px;
+}
+.block__show_conteiner{
+  position: relative;
+  cursor: pointer;
+  padding: 27px 50px 27px 0;
+  border-top: 1px solid #eee;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.block__show_conteiner .title{
+  font-size: 32px;
+  font-family: 'Open Sans';
+  line-height: 1.35;
+  font-weight: 600;
+  color: #000;
+}
+.block__show_conteiner .icon_cross{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  -webkit-transition: opacity ease-in-out .2s;
+  -moz-transition: opacity ease-in-out .2s;
+  -o-transition: opacity ease-in-out .2s;
+  transition: opacity ease-in-out .2s;
+}
+.block__show_conteiner .cross{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  z-index: 1;
+}
+.block__show_conteiner.open .cross{
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 1;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+.icon_cross .cross_circle{
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  background-color: #eee;
+}
+.icon_cross:hover .cross_circle{
+  display: block;
+}
