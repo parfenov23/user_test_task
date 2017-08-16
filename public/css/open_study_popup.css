@@ -1,0 +1,93 @@
+a[href^='#open_study_popup']{
+  position: relative;
+}
+a[href^='#open_study_popup']:before, a[href^='#open_study_popup']:after{
+  opacity: 1;
+  content: '';
+  position: absolute;
+  margin-top: 9px;
+  right: -16px;
+  transition: all .35s ease;
+}
+
+a[href^='#open_study_popup']:before{
+  border: 6px solid transparent;
+  border-top-color: #000000;
+}
+
+a[href^='#open_study_popup']:after {
+  border: 5px solid transparent;
+  border-top-color: rgb(245, 245, 245);
+  -webkit-transform: translate(-1px,-1px);
+}
+
+a[href^='#open_study_popup'].active, a[href^='#open_study_popup'].active_page{
+  color: #1f4fdb !important;
+}
+
+a[href^='#open_study_popup'].active:before{
+  transform: rotate(180deg);
+  margin-top: 2px;
+}
+
+a[href^='#open_study_popup'].active:before{
+  border-top-color: #1f4fdb;
+}
+a[href^='#open_study_popup'].active:after{
+  margin-top: 2px;
+  transform: translate(-1px, 3px) rotate(-180deg) !important;
+}
+
+div[id^='study_popup']{
+  position: absolute;
+  top: 66px;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.20);
+  padding: 18px 18px 6px 18px;
+  z-index: 990;
+  display: none;
+}
+div[id^='study_popup'] ul{
+  list-style-type: none;
+  padding-left: 0px !important;
+  margin-bottom: 0px !important;
+}
+div[id^='study_popup'] ul li{
+  color:#242424;
+  font-family: 'Open Sans',sans-serif;
+  font-size:14px;
+  font-weight:600;
+  line-height:1.45;
+  padding-bottom: 12px;
+}
+div[id^='study_popup'] ul li a.active{ 
+  color: #1f4fdb !important;
+}
+div[id^='study_popup'] ul li a{
+  color: black !important;
+}
+div[id^='study_popup'] ul li a:hover{
+  color: #1f4fdb !important;
+}
+
+div[id^='study_popup'] .triangel{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  overflow: hidden;
+  top: -40px;
+  transform: rotate(90deg);
+}
+div[id^='study_popup'] .triangel:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 1px -1px 10px -3px rgba(0,0,0,0.5);
+  position: absolute;
+  top: calc(50% - 10px);
+  margin-left: 30px;
+}

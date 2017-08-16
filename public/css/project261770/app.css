@@ -1,1 +1,41 @@
-app.css
+#nav24724264 .t228__list li.t228__list_item:first-child{
+  display: none;
+}
+
+@media screen and (max-width: 980px){
+  #rec24724264{
+    padding-top: 0px !important;
+  }
+  .t228__mobile {
+    background-color: #fff;
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  .t228__burger{
+    left: 20px;
+    right: 0;
+  }
+  .t228__burger span{
+    background-color: #000;
+  }
+  .t228__leftside{
+    display: none;
+  }
+  .t228__centercontainer .t228__list_hidden li{
+    text-align: left;
+  }
+  .t228__centercontainer .t228__list_hidden li:first-child{
+    display: block;
+  }
+  .t228__centercontainer .t228__list_hidden li:first-child span{
+    display: none;
+  }
+  .t228__centercontainer .t228__list_hidden li:first-child a{
+    border: initial !important;
+    color: black !important;
+    background-color: #a1b7f7;
+    padding: 4px 16px 4px 16px !important;
+    border-radius: 12px;
+  }
+
+}
