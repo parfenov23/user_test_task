@@ -1,9 +1,9 @@
-#nav24724264 .t228__list li.t228__list_item:first-child{
+#nav24724264 li:first-child, #nav22325784 li:first-child{
   display: none;
 }
 
 @media screen and (max-width: 980px){
-  #rec24724264{
+  #rec24724264, #rec22325784{
     padding-top: 0px !important;
   }
   .t228__mobile {
@@ -24,10 +24,10 @@
   .t228__centercontainer .t228__list_hidden li{
     text-align: left;
   }
-  #nav24724264 .t228__list li.t228__list_item:first-child{
+  #nav24724264 li:first-child, #nav22325784 li:first-child{
     display: block;
   }
-  #nav24724264 .t228__list li.t228__list_item:first-child span{
+  #nav24724264 li:first-child span, #nav22325784 li:first-child span{
     display: none;
   }
   .t228__centercontainer .t228__list_hidden li:first-child a{
