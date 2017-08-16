@@ -14,4 +14,11 @@ $(document).ready(function(){
     $(".block__show_conteiner").each(function(n, e){
         $( $(e).data("hidden-rec-ids") ).hide();
     });
-})
+});
+
+$(document).ready(function () {
+    setTimeout(function(){
+        $("a[href='#open_study_popup2']").text($.cookie('city') || ymaps.geolocation.city);
+    }, 200);
+    
+});
