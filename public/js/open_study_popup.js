@@ -4,7 +4,7 @@ var openStudyPopup = function(id_popup){
   if (!block_popup.hasClass("open")){
     closeAllSudyPopup();
     btn.addClass("active");
-    block_popup.css('left', btn.position().left + "px").css('top', btn.position().top + btn.height + 28 + "px");
+    block_popup.css('left', btn.position().left + "px").css('top', btn.position().top + btn.height() + 28 + "px");
     block_popup.fadeIn("slow");
     block_popup.addClass("open");
   }else{
