@@ -1,5 +1,4 @@
-var openStudyPopup = function(id_popup){
-  var btn = $("a[href='#open_"+ id_popup +"']");
+var openStudyPopup = function(id_popup, btn){
   var block_popup = $("#"+id_popup);
   if (!block_popup.hasClass("open")){
     closeAllSudyPopup();
@@ -37,7 +36,7 @@ $(document).ready(function(){
   $("a[href^='#open_study_popup']").click(function(){
     var btn = $(this);
     var id_popup = btn.attr('href').replace("#open_","");
-    openStudyPopup(id_popup);
+    openStudyPopup(id_popup, btn);
   });
 
 

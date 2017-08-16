@@ -24,10 +24,10 @@
   .t228__centercontainer .t228__list_hidden li{
     text-align: left;
   }
-  .t228__centercontainer .t228__list_hidden li:first-child{
+  #nav24724264 .t228__list li.t228__list_item:first-child{
     display: block;
   }
-  .t228__centercontainer .t228__list_hidden li:first-child span{
+  #nav24724264 .t228__list li.t228__list_item:first-child span{
     display: none;
   }
   .t228__centercontainer .t228__list_hidden li:first-child a{
