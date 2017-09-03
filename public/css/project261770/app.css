@@ -1,6 +1,11 @@
 #nav24724264 li:first-child, #nav22325784 li:first-child, #nav31023200 li:first-child{
   display: none;
 }
+@media (max-width: 980px) {
+  body {
+    padding-top: 0px !important;
+  }
+}
 
 @media screen and (max-width: 980px){
   #rec24724264, #rec22325784, #rec31023200{
